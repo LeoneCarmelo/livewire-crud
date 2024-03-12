@@ -12,37 +12,7 @@
 <body class="bg-dark">
     <div class="container-fluid">
         <!-- Nav tabs -->
-        <ul class="nav nav-tabs bg-light" id="navId" role="tablist">
-            <li class="nav-item">
-                <a href="#tab1Id" class="nav-link text-dark" data-bs-toggle="tab" aria-current="page">Active</a>
-            </li>
-            <li class="nav-item" role="presentation">
-                <a href="{{ url('customer/create') }}" class="nav-link text-dark">Create Customer</a>
-            </li>
-            <li class="nav-item" role="presentation">
-                <a href="{{ url('customer/index') }}" class="nav-link text-dark">Customers</a>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link text-dark dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-                <div class="dropdown-menu">
-                    <a class="dropdown-item" href="#tab2Id">Action</a>
-                    <a class="dropdown-item" href="#tab3Id">Another action</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#tab4Id">Action</a>
-                </div>
-            </li>
-        </ul>
-
-        <!-- Tab panes -->
-        <div class="tab-content" id="myTabContent">
-            <div class="tab-pane fade show active" id="tab1Id" role="tabpanel">
-
-            </div>
-            <div class="tab-pane fade" id="tab2Id" role="tabpanel"></div>
-            <div class="tab-pane fade" id="tab3Id" role="tabpanel"></div>
-            <div class="tab-pane fade" id="tab4Id" role="tabpanel"></div>
-            <div class="tab-pane fade" id="tab5Id" role="tabpanel"></div>
-        </div>
+        @include('partials.nav-bar')
     </div>
     <div class="container">
         @include('partials.session-message')

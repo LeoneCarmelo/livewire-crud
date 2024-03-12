@@ -8,6 +8,7 @@
         @vite(['resources/js/app.js', 'resources/scss/app.scss', 'resources/css/app.css'])
     </head>
     <body>
+        @include('partials.nav-bar')
         <div class="container">
             {{ $slot }}
         </div>

@@ -10,9 +10,9 @@
 </head>
 
 <body class="bg-dark">
-    <div class="container a">
+    <div class="container-fluid">
         <!-- Nav tabs -->
-        <ul class="nav nav-tabs" id="navId" role="tablist">
+        <ul class="nav nav-tabs bg-light" id="navId" role="tablist">
             <li class="nav-item">
                 <a href="#tab1Id" class="nav-link text-dark" data-bs-toggle="tab" aria-current="page">Active</a>
             </li>
@@ -40,13 +40,6 @@
             <div class="tab-pane fade" id="tab4Id" role="tabpanel"></div>
             <div class="tab-pane fade" id="tab5Id" role="tabpanel"></div>
         </div>
-
-        <!-- (Optional) - Place this js code after initializing bootstrap.min.js or bootstrap.bundle.min.js -->
-        <script>
-            var triggerEl = document.querySelector("#navId a");
-            bootstrap.Tab.getInstance(triggerEl).show(); // Select tab by name
-        </script>
-
     </div>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>

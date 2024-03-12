@@ -16,6 +16,6 @@ use App\Livewire\CreateCustomer;
 
 Route::get('/', function () {
     return view('welcome');
-});
+})->name('welcome');
 
 Route::get('/customer/create', CreateCustomer::class);

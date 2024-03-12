@@ -19,6 +19,9 @@
             <li class="nav-item" role="presentation">
                 <a href="{{ url('customer/create') }}" class="nav-link text-dark">Create Customer</a>
             </li>
+            <li class="nav-item" role="presentation">
+                <a href="{{ url('customer/index') }}" class="nav-link text-dark">Customers</a>
+            </li>
             <li class="nav-item dropdown">
                 <a class="nav-link text-dark dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
                 <div class="dropdown-menu">

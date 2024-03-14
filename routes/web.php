@@ -3,6 +3,8 @@
 use Illuminate\Support\Facades\Route;
 use App\Livewire\CreateCustomer;
 use App\Livewire\IndexCustomer;
+use App\Livewire\ViewCustomer;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -21,4 +23,5 @@ Route::get('/', function () {
 
 Route::get('/customer/create', CreateCustomer::class);
 Route::get('/customer/index', IndexCustomer::class)->name('index-customer');
+Route::get('/customer/{customer}', ViewCustomer::class)->name('view-customer');
 

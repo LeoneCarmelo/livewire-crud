@@ -27,6 +27,7 @@
                         <div class='invalid-feedback'>{{ $message}}</div>
                         @enderror
                     </div>
+                    <button wire:navigate href="/customer/index" class="btn btn-secondary">Back</button>
                     <button type="submit" class="btn btn-primary">
                         Submit
                     </button>

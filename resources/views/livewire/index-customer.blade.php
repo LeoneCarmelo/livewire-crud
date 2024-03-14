@@ -21,7 +21,7 @@
                             <td>{{ $customer->email }}</td>
                             <td>
                                 <div class="d-flex align-items-center justify-content-between h-100">
-                                    <a href="">
+                                    <a href="{{ route('view-customer', $customer->id ) }}">
                                         <i class="fa-solid fa-eye text-primary" aria-hidden="true"></i>
                                     </a>
                                     <a href="">

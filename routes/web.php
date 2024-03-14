@@ -20,4 +20,5 @@ Route::get('/', function () {
 })->name('welcome');
 
 Route::get('/customer/create', CreateCustomer::class);
-Route::get('/customer/index', IndexCustomer::class);
+Route::get('/customer/index', IndexCustomer::class)->name('index-customer');
+

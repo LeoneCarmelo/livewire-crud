@@ -18,5 +18,10 @@ class IndexCustomer extends Component
     {
         return view('livewire.index-customer', ['customers' => $this->customers]);
     }
-
+     
+    public function deleteCustomer(Customer $customer){
+            $customer->delete();
+            session()->flash('message', 'Customer deleted successfully.');
+            return $this->redirect('/customer/index');
+     }
 }

@@ -36,7 +36,7 @@ class CreateCustomer extends Component
 
         session()->flash('message', 'Customer created successfully.');
 
-        return redirect()->route('welcome');
+        return redirect()->route('index-customer');
     }
 
 }

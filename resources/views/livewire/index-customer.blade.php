@@ -3,7 +3,6 @@
         @include('partials.session-message')
         <h1 class="py-3 text-light">Customers
         </h1>
-
         <div class="row">
             <div class="table-responsive">
                 <table class="table table-dark table-striped table-hover table-bordered">
@@ -24,7 +23,7 @@
                                     <a href="{{ route('view-customer', $customer->id ) }}">
                                         <i class="fa-solid fa-eye text-primary" aria-hidden="true"></i>
                                     </a>
-                                    <a href="">
+                                    <a href="{{ route('edit-customer', $customer->id ) }}">
                                         <i class="fa-solid fa-pencil text-warning" aria-hidden="true"></i>
                                     </a>
                                     <a type="button" class="" data-bs-toggle="modal" data-bs-target="#modalId-{{$customer->id}}">
